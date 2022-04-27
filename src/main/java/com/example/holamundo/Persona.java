@@ -20,11 +20,18 @@ public class Persona {
 
     
 
-    
+    public Long getId() {
+        return id;
+    }
+
+    public void setId (Long id) {
+        this.id = id;
+    }
+
+
     public String getNombre() {
         return nombre;
     }
-
 
 
 
@@ -51,10 +58,12 @@ public class Persona {
     }
 
     public Persona(Long id, String nombre, String apellido) {
-        this.id = id;
+        this.setId(id);
         this.setNombre(nombre);
         this.setApellido(apellido);
     }
+
+
     
 
 
