@@ -1,8 +1,5 @@
 ### CRUD API Rest Spring Boot(Java), con MySQL
 
-------------
-
-
 
 Rest Full Api para crear usuarios y modelos.
 
