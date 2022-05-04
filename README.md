@@ -17,3 +17,10 @@ Rest Full Api para crear usuarios y modelos.
 - Asegurarse de tener Java 11 +
 
 - Se ejecuta utilizando Visual Studio Code con sus respectivas extenciones como son Java Extension Pack y Spring Boot Extension Pack
+
+### Funcionamiento
+
+- Se puede traer a todas las personas usando GET
+- Se puede ingresar a Persona con POST utilizando JSON
+- Se puede modificar a Persona con Request utilizando Params
+- Se puede borrar a Persona ingresando el Id en la barra de direcciones
