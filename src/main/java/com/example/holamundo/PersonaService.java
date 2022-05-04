@@ -6,19 +6,29 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PersonaService implements IPersonaService {
+
     @Autowired
+    //Autowired nos permite hacer inyeccion de dependencias, 
+    //puede ser mediante constructores o mediante Setter y demas
+    //sin la necesidad de estar usando new cada rato y crear
+    //un monton de instancias
+
     public IPersonaRepository persoRepo;
 
     @Override
     public List<Persona> verPersonas() {
         return persoRepo.findAll();
-       
     }
 
     @Override
     public void crearPersona(Persona per) {
         persoRepo.save(per);
         
+    }
+
+    @Override
+    public void modificarPersona(Persona per) {
+        persoRepo.save(per);        
     }
 
     @Override
@@ -29,7 +39,8 @@ public class PersonaService implements IPersonaService {
 
     @Override
     public Persona buscarPersona(Long id) {
-       return persoRepo.findById(id).orElse(null);
+        return persoRepo.findById(id).orElse(null);
     }
+   
     
 }
