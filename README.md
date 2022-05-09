@@ -16,7 +16,7 @@ Rest Full Api para crear usuarios y modelos.
 
 - Asegurarse de tener Java 11 +
 
--Se ejecuta utilizando Eclipse IDE
+- Se ejecuta utilizando Eclipse IDE
 
 - Se ejecuta utilizando Visual Studio Code con sus respectivas extenciones como son Java Extension Pack y Spring Boot Extension Pack
 
